@@ -1,0 +1,81 @@
+.grid {
+    width: 700px;
+    height: 400 auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    box-shadow:0 0 0 .2rem rgba(243, 233, 233, 0.3);
+    overflow: auto;
+} 
+.grid h1 {
+    font-size: 50px;
+    text-align: left;
+    color: #4c06ce;
+    padding: 2px 0px; 
+}
+.todo-list-input {
+    width: 600px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.button {
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    background-color: #4c06ce;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+ul {   
+    padding: 0;
+    word-wrap: break-word;
+}
+.list-group-item{
+    display:block;
+    text-align: left;
+    height: auto;
+    overflow-wrap: break-word;
+    font-size: 25px;
+    margin-left: 0;
+    padding-top:.25rem;
+    padding-bottom: .25rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:#fff;
+}
+
+li > button {
+    float: right;
+}
+
+.btn-delete {
+    bottom: 5px;
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    border-radius: 5px;   
+    background-color: red;
+    margin-left: 20px;
+}
+.btn-edit {
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(73, 163, 73);
+    margin-left: 20px;
+}
