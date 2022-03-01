@@ -1,6 +1,6 @@
 window.onload = () => {
-    const formSelector = document.querySelector("#addForm");
-    let items = document.getElementById("items");
+    var formSelector = document.querySelector("#addForm");
+    var items = document.getElementById("items");
     formSelector.addEventListener("submit", addItem);
     items.addEventListener("click", removeItem);
 };
@@ -19,7 +19,7 @@ function addItem(e) {
         return false;
     }
 
-    let newItem = document.getElementById("item").value;
+    var newItem = document.getElementById("item").value;
     if (newItem.trim() == "" || newItem.trim() == null) {
         alert("Please Enter some text in the TO-DO list.");
         return false;
@@ -27,16 +27,16 @@ function addItem(e) {
     else
         document.getElementById("item").value = "";
 
-    let li = document.createElement("li");
+    var li = document.createElement("li");
     li.className = "list-group-item";
 
-    let deleteButton = document.createElement("button");
+    var deleteButton = document.createElement("button");
 
     deleteButton.className = "btn-delete";
 
     deleteButton.appendChild(document.createTextNode("Delete"));
 
-    let editButton = document.createElement("button");
+    var editButton = document.createElement("button");
 
     editButton.className = "btn-edit";
 
@@ -53,7 +53,7 @@ function removeItem(e) {
     e.preventDefault();
     if (e.target.classList.contains("btn-delete")) {
         if (confirm("Do you want to Delete this item ?")) {
-            let li = e.target.parentNode;
+            var li = e.target.parentNode;
             items.removeChild(li);
         }
     }
